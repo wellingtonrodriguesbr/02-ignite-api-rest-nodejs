@@ -1,5 +1,5 @@
-import { FastifyInstance } from 'fastify'
 import crypto from 'node:crypto'
+import { FastifyInstance } from 'fastify'
 import { knex } from '../database'
 
 export async function transactionsRoutes(app: FastifyInstance) {
