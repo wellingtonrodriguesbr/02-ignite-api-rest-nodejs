@@ -12,7 +12,7 @@ export async function transactionsRoutes(app: FastifyInstance) {
       .where('session_id', sessionId)
       .select()
 
-    return transactions
+    return { transactions }
   })
 
   app.post('/', async (req, reply) => {
